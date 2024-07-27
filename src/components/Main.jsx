@@ -8,7 +8,7 @@ export default function Main() {
       <ImageBackground source={bg1} resizeMode='cover' style={styles.bg}>
         <StatusBar style="dark" />
         <Image source={logo} style={styles.image}/>
-        <Text style={styles.text}>Bienvenido</Text>
+        <Text style={styles.text} className="text-8xl">Bienvenido</Text>
       </ImageBackground>
     </View>
   );
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: 'Tungsten',
-    fontSize: 60,
     color: '#41279f',
+    textTransform: 'uppercase'
   }
 });
