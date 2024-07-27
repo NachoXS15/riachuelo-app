@@ -4,7 +4,7 @@ import bg1 from '../../assets/bg1.png'
 import logo from '../../assets/logo.png'
 export default function Main() {
   return (
-    <View className="w-full h-full" style={styles.container}>
+    <View className="w-full flex items-center justify-center" style={styles.container}>
       <ImageBackground source={bg1} resizeMode='cover' style={styles.bg}>
         <StatusBar style="dark" />
         <Image source={logo} style={styles.image}/>
@@ -16,11 +16,7 @@ export default function Main() {
 
 const styles = StyleSheet.create({
   container: {
-    minHeight: '100dvh',
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    minHeight: '100dvh'
   },
   bg: {
     width: '100%',
