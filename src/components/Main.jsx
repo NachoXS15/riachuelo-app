@@ -16,6 +16,7 @@ export default function Main() {
 
 const styles = StyleSheet.create({
   container: {
+    minHeight: '100dvh',
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
@@ -32,7 +33,8 @@ const styles = StyleSheet.create({
     height: 300
   },
   text: {
-    fontFamily: 'Times New Roman',
-    fontSize: 40
+    fontFamily: 'Tungsten',
+    fontSize: 60,
+    color: '#41279f',
   }
 });
