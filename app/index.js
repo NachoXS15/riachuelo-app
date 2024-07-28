@@ -1,7 +1,10 @@
-import Main from '../src/components/Main'
+import { SafeAreaProvider } from "react-native-safe-area-context"
+import Welcome from "../src/screens/Welcome"
 
-export default function Index(){
+export default function Index() {
     return (
-        <Main />
+        <SafeAreaProvider>
+            <Welcome />
+        </SafeAreaProvider>
     )
 }
