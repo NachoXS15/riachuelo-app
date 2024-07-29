@@ -1,10 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import Main from "./src/components/Main";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import Home from "./app/src/screens/Home";
 export default function App(){
   return (
     <SafeAreaProvider>
-      <Main />
+      <Home />
     </SafeAreaProvider>
   )
 }

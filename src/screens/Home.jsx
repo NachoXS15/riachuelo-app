@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dimensions, Text, ImageBackground, StyleSheet, View} from 'react-native'
+import { Dimensions, ImageBackground} from 'react-native'
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import Header from '../components/Header';
