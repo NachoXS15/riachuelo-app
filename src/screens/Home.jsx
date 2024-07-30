@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <SafeAreaProvider>
             <ImageBackground source={bg1} style={{width: width, height: heigth}}>
-                <StatusBar style='dark' />
+                <StatusBar style='light' />
                 <Header />
             </ImageBackground>
         </SafeAreaProvider>

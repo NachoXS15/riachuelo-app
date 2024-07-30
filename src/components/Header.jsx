@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Image, Dimensions } from 'react-native'
-import car from '../../../assets/car1994.png'
+import car from '../../assets/car1994.png'
 // import SettingsOutline from './Icons'
 
 export default function Header() {
