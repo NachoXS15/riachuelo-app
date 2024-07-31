@@ -1,18 +1,17 @@
 import { Link } from 'expo-router'
+import { styled } from 'nativewind';
 import React from 'react'
-import { Pressable, Text, StyleSheet } from 'react-native'
+import { Pressable, Text } from 'react-native'
+
+const StylesPressable = styled(Pressable)
+
 
 export function ButtonPrimary({ children, to }) {
   return (
     <Link asChild href={to}>
-      <Pressable style={{
-          backgroundColor: "#43259f",
-          paddingVertical: 5,
-          paddingHorizontal: 10,
-          borderRadius: 50
-        }}>
-        <Text style={{ fontSize: 16, textAlign: 'center', color: 'white' }}>{children}</Text>
-      </Pressable>
+      <StylesPressable className='bg-blue-900 py-2 px-5 rounded-full active:bg-black'>
+        <Text style={{ fontSize: 24, textAlign: 'center', color: 'white' }}>{children}</Text>
+      </StylesPressable>
     </Link>
   );
 }
@@ -20,14 +19,9 @@ export function ButtonPrimary({ children, to }) {
 export function ButtonDanger({ children, to }) {
   return (
     <Link asChild href={to}>
-      <Pressable style={{
-          backgroundColor: "#931a1a",
-          paddingVertical: 5,
-          paddingHorizontal: 10,
-          borderRadius: 50
-        }}>
-        <Text style={{ fontSize: 16, textAlign: 'center', color: 'white' }}>{children}</Text>
-      </Pressable>
+      <StylesPressable className='bg-red-700 py-2 px-5 rounded-full active:bg-black'>
+        <Text style={{ fontSize: 24, textAlign: 'center', color: 'white' }}>{children}</Text>
+      </StylesPressable>
     </Link>
   );
 }
@@ -35,14 +29,9 @@ export function ButtonDanger({ children, to }) {
 export function ButtonGray({ children, to }) {
   return (
     <Link asChild href={to}>
-      <Pressable style={{
-          backgroundColor: "#b3b0c6",
-          paddingVertical: 5,
-          paddingHorizontal: 10,
-          borderRadius: 50
-        }}>
-        <Text style={{ fontSize: 16, textAlign: 'center', color: '#000' }}>{children}</Text>
-      </Pressable>
+      <StylesPressable className='bg-slate-400 py-2 px-5 rounded-full active:bg-black'>
+        <Text style={{ fontSize: 24, textAlign: 'center', color: 'white' }}>{children}</Text>
+      </StylesPressable>
     </Link>
   );
 }
