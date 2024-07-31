@@ -29,6 +29,13 @@
     "expo": {
       "plugins": [
         "expo-router",
+        {
+          "layouts": {
+            "/app/index.js": {
+              "applyStack": false
+            }
+          }
+        },
         [
           "expo-font", 
           {
