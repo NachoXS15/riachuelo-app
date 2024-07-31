@@ -3,7 +3,7 @@ import { View, Text, StatusBar, Image, ImageBackground, StyleSheet, Dimensions }
 import bg1 from '../../assets/bg1.png'
 import logo from '../../assets/logo.png'
 import { ButtonPrimary } from '../components/Buttons'
-import { Stack } from 'expo-router'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 
 export default function Welcome() {
@@ -12,9 +12,7 @@ export default function Welcome() {
     const height = Dimensions.get('screen').height
 
     return (
-        <Stack.Screen options={{
-            headerShown: false
-        }}>
+        <SafeAreaProvider>
             <ImageBackground style={{ width: width, height: height }} source={bg1}>
                 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                     <StatusBar style="dark" />
@@ -23,7 +21,8 @@ export default function Welcome() {
                     <ButtonPrimary to="/Home">Comenzar</ButtonPrimary>
                 </View>
             </ImageBackground>
-        </Stack.Screen>
+        </SafeAreaProvider>
+
     )
 }
 

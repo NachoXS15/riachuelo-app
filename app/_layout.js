@@ -5,8 +5,11 @@ import car from '../assets/car1994.png'
 export default function Layout() {
     return (
         <View className="flex-1">
-            <Stack />
-            
+            <Stack
+                screenOptions={{
+                    headerShown: false
+                }}
+            />
         </View>
     )
 }
