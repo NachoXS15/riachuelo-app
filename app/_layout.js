@@ -1,7 +1,6 @@
-import { View, Image } from 'react-native'
+import { View } from 'react-native'
 import { Stack } from 'expo-router'
 
-import car from '../assets/car1994.png'
 export default function Layout() {
     return (
         <View className="flex-1">
